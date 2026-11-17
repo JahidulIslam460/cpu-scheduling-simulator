@@ -1,0 +1,55 @@
+\n=== FCFS ===
+Gantt: P1[0-7] | P2[7-11] | P3[11-12] | P4[12-16]
+PID  AT  BT  CT  TAT  WT  RT
+P1    0   7   7    7   0   0
+P2    2   4  11    9   5   5
+P3    4   1  12    8   7   7
+P4    5   4  16   11   7   7
+Average WT=4.75, TAT=8.75, RT=4.75
+Throughput=0.250 processes/unit, CPU utilization=100.0%
+\n=== SJF ===
+Gantt: P1[0-7] | P3[7-8] | P2[8-12] | P4[12-16]
+PID  AT  BT  CT  TAT  WT  RT
+P1    0   7   7    7   0   0
+P2    2   4  12   10   6   6
+P3    4   1   8    4   3   3
+P4    5   4  16   11   7   7
+Average WT=4.00, TAT=8.00, RT=4.00
+Throughput=0.250 processes/unit, CPU utilization=100.0%
+\n=== SRTF ===
+Gantt: P1[0-2] | P2[2-4] | P3[4-5] | P2[5-7] | P4[7-11] | P1[11-16]
+PID  AT  BT  CT  TAT  WT  RT
+P1    0   7  16   16   9   0
+P2    2   4   7    5   1   0
+P3    4   1   5    1   0   0
+P4    5   4  11    6   2   2
+Average WT=3.00, TAT=7.00, RT=0.50
+Throughput=0.250 processes/unit, CPU utilization=100.0%
+\n=== Round Robin (q=2) ===
+Gantt: P1[0-2] | P2[2-4] | P1[4-6] | P3[6-7] | P2[7-9] | P4[9-11] | P1[11-13] | P4[13-15] | P1[15-16]
+PID  AT  BT  CT  TAT  WT  RT
+P1    0   7  16   16   9   0
+P2    2   4   9    7   3   0
+P3    4   1   7    3   2   2
+P4    5   4  15   10   6   4
+Average WT=5.00, TAT=9.00, RT=1.50
+Throughput=0.250 processes/unit, CPU utilization=100.0%
+\n=== Priority + Aging ===
+Gantt: P1[0-7] | P2[7-11] | P4[11-15] | P3[15-16]
+PID  AT  BT  CT  TAT  WT  RT
+P1    0   7   7    7   0   0
+P2    2   4  11    9   5   5
+P3    4   1  16   12  11  11
+P4    5   4  15   10   6   6
+Average WT=5.50, TAT=9.50, RT=5.50
+Throughput=0.250 processes/unit, CPU utilization=100.0%
+Spreadsheet runtime warmup failed during python startup
+Traceback (most recent call last):
+  File "/tmp/tmp.QlpUkOUI9D/artifact_tool_v2-2.8.66/artifact_tool/patches/warm_spreadsheet_runtime_on_startup.py", line 26, in warm_spreadsheet_runtime_on_startup
+  File "/tmp/tmp.QlpUkOUI9D/artifact_tool_v2-2.8.66/artifact_tool/spreadsheet_warmup.py", line 785, in warm_spreadsheet_runtime
+  File "/tmp/tmp.QlpUkOUI9D/artifact_tool_v2-2.8.66/artifact_tool/spreadsheet_warmup.py", line 718, in _warm_feature_flows
+  File "/tmp/tmp.QlpUkOUI9D/artifact_tool_v2-2.8.66/artifact_tool/spreadsheet_warmup.py", line 509, in _warm_drawing_and_image_flows
+  File "/tmp/tmp.QlpUkOUI9D/artifact_tool_v2-2.8.66/artifact_tool/generated/interface/models.py", line 32861, in bring_to_front
+  File "/tmp/tmp.QlpUkOUI9D/artifact_tool_v2-2.8.66/artifact_tool/rpc/remote.py", line 764, in __call__
+  File "/tmp/tmp.QlpUkOUI9D/artifact_tool_v2-2.8.66/artifact_tool/rpc/client.py", line 175, in call
+artifact_tool.rpc.client.RemoteError: Element ordering requires an owning element collection.

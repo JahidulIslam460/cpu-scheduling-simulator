@@ -1,0 +1,11 @@
+workload,algorithm,avg_waiting,avg_turnaround,avg_response,throughput,cpu_utilization_percent,gantt
+Interactive,FCFS,1.0,2.5,1.0,0.667,100.0,I1:0-2 I2:2-3 I3:3-5 I4:5-6
+Interactive,SJF,0.75,2.25,0.75,0.667,100.0,I1:0-2 I2:2-3 I4:3-4 I3:4-6
+Interactive,SRTF,0.75,2.25,0.75,0.667,100.0,I1:0-2 I2:2-3 I4:3-4 I3:4-6
+Interactive,RR q=2,1.0,2.5,1.0,0.667,100.0,I1:0-2 I2:2-3 I3:3-5 I4:5-6
+Interactive,Priority + Aging,0.75,2.25,0.75,0.667,100.0,I1:0-2 I2:2-3 I4:3-4 I3:4-6
+Batch,FCFS,11.5,18.5,11.5,0.143,100.0,B1:0-10 B2:10-18 B3:18-24 B4:24-28
+Batch,SJF,9.5,16.5,9.5,0.143,100.0,B1:0-10 B4:10-14 B3:14-20 B2:20-28
+Batch,SRTF,8.0,15.0,0.0,0.143,100.0,B1:0-1 B2:1-2 B3:2-3 B4:3-7 B3:7-12 B2:12-19 B1:19-28
+Batch,RR q=2,15.0,22.0,2.0,0.143,100.0,B1:0-2 B2:2-4 B3:4-6 B1:6-8 B4:8-10 B2:10-12 B3:12-14 B1:14-16 B4:16-18 B2:18-20 B3:20-22 B1:22-24 B2:24-26 B1:26-28
+Batch,Priority + Aging,11.5,18.5,11.5,0.143,100.0,B1:0-10 B2:10-18 B3:18-24 B4:24-28

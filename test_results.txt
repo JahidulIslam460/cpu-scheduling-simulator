@@ -1,0 +1,21 @@
+CPU Scheduling Simulator — Automated Test Results
+
+test_aging_changes_effective_priority (test_scheduler.SchedulingTests.test_aging_changes_effective_priority) ... ok
+test_arrivals_during_round_robin_slice_are_queued (test_scheduler.SchedulingTests.test_arrivals_during_round_robin_slice_are_queued) ... ok
+test_duplicate_pid (test_scheduler.SchedulingTests.test_duplicate_pid) ... ok
+test_fcfs_completion_and_waiting (test_scheduler.SchedulingTests.test_fcfs_completion_and_waiting) ... ok
+test_idle_cpu_period (test_scheduler.SchedulingTests.test_idle_cpu_period) ... ok
+test_invalid_burst (test_scheduler.SchedulingTests.test_invalid_burst) ... ok
+test_invalid_quantum (test_scheduler.SchedulingTests.test_invalid_quantum) ... ok
+test_metrics_relationship (test_scheduler.SchedulingTests.test_metrics_relationship) ... ok
+test_negative_arrival (test_scheduler.SchedulingTests.test_negative_arrival) ... ok
+test_priority_tie_breaks_by_arrival_then_pid (test_scheduler.SchedulingTests.test_priority_tie_breaks_by_arrival_then_pid) ... ok
+test_round_robin_respects_quantum (test_scheduler.SchedulingTests.test_round_robin_respects_quantum) ... ok
+test_simultaneous_arrivals_are_all_scheduled (test_scheduler.SchedulingTests.test_simultaneous_arrivals_are_all_scheduled) ... ok
+test_sjf_selects_shortest_ready_job (test_scheduler.SchedulingTests.test_sjf_selects_shortest_ready_job) ... ok
+test_srtf_preempts_when_shorter_job_arrives (test_scheduler.SchedulingTests.test_srtf_preempts_when_shorter_job_arrives) ... ok
+
+----------------------------------------------------------------------
+Ran 14 tests in 0.001s
+
+OK
